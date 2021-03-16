@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="init();">
+    <!--header-->
+    <header class="header">
+        <div class="container">
+            <h1>Stealing user cookies</h1>
+        </div>
+    </header>
+    <!--/header-->
+    <!--navigation-->
+    <nav class="page-navigator">
+        <div class="container">
+            <ul>
+                <li><a href="#" onclick="show('Laptops');">Laptops</a></li>
+                <li><a href="#" onclick="show('Phones');">Phones</a></li>
+                <li><a href="#" onclick="show('Electronics');">Electronics</a></li>
+            </ul>
+            <form action="#" class="login">
+                <input type="text" placeholder="Login" required>
+                <input type="password" placeholder="Password" required>
+                <input type="submit" value="Sing In">
+            </form>
+        </div>
+    </nav>
+    <!--/navigation-->
+    <div id="Laptops" class="page" style=>
+        <!--main of Laptops page-->
+        <main>
+            <div class="container">
+                <h2 class="collection-title">Devices</h2>
+                <div class="collections">
+                    <div class="collection-item-outer">
+                        <div class="collection-item">
+                            <img src="res/Acer Nitro 5 AN515-55-56WH.png" alt="List picture" width="300" height="">
+                            <div class="collection-text">
+                                <h3>Acer Nitro 5 AN515-55-56WH</h3>
+                                <p> Nitro 5 – потужний ігровий ноутбук із сучасним ігровим дизайном,
+                                    який оснащено високопродуктивними компонентами.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-item-outer">
+                        <div class="collection-item">
+                            <img src="res/Lenovo Legion 5 15ARH05.png" alt="List picture" width="300" height="">
+                            <div class="collection-text">
+                                <h3>Lenovo Legion 5 15ARH05</h3>
+                                <p>Відкрий для себе неперевершену ігрову продуктивність
+                                    у поєднанні з безкомпромісними інженерними рішеннями.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-item-outer">
+                        <div class="collection-item">
+                            <img src="res/Asus ROG Strix G15 G512LI-HN094.png" alt="List picture" width="300" height="">
+                            <div class="collection-text">
+                                <h3>Asus ROG Strix G15 G512LI-HN094</h3>
+                                <p> Сміливий дизайн
+                                    Інженери ASUS працювали над зовнішнім виглядом ноутбука ROG Strix G
+                                    спільно з фахівцями дизайнерського бюро компанії BMW.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--/main of Laptops page-->
+    </div>
+    <div id="Phones" class="page" style="display:none">
+        <!--main of Phones page-->
+        <main>
+            <div class="container">
+                <h2 class="collection-title">Devices</h2>
+                <div class="collections">
+                    <div class="collection-item-outer">
+                        <div class="collection-item">
+                            <img src="res/Apple iPhone 11 64 GB Black Slim Box.png" alt="List picture" width="300" height="">
+                            <div class="collection-text">
+                                <h3>Apple iPhone 11 64 GB Black Slim</h3>
+                                <p> Нова система двох камер не залишить жодного з ваших друзів за кадром.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-item-outer">
+                        <div class="collection-item">
+                            <img src="res/Samsung Galaxy M21 4-64GB Green .png" alt="List picture" width="300" height="">
+                            <div class="collection-text">
+                                <h3>Samsung Galaxy M21 4-64GB</h3>
+                                <p>
+                                    Широкий 6.4-дюймовий безмежний U-дисплей, яким обладнаний Galaxy M21, 
+                                    відтворює для вас ще більше улюбленого контенту. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-item-outer">
+                        <div class="collection-item">
+                            <img src="res/Samsung Galaxy S21 Ultra 16_512.png" alt="List picture" width="300" height="">
+                            <div class="collection-text">
+                                <h3>Samsung Galaxy S21 Ultra 16/512</h3>
+                                <p> Унікальні камери — це революція в галузі фотографії, 
+                                    за допомогою яких ви зможете знімати 8К відео кінематографічної якості
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--/main of Phones page-->
+    </div>
+    <div id="Electronics" class="page" style="display:none">
+        <!--main of Electronics page-->
+        <main>
+            <div class="container">
+                <h2 class="collection-title">Devices</h2>
+                <div class="collections">
+                    <div class="collection-item-outer">
+                        <div class="collection-item">
+                            <img src="res/HANTEK 2C72.png" alt="List picture" width="300" height="">
+                            <div class="collection-text">
+                                <h3>HANTEK 2C72</h3>
+                                <p>Портативний високоякісний вимірювальний прилад Hantek 2C72 поєднує в собі 
+                                    функції двоканального осцилографа і функціонального мультиметра.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-item-outer">
+                        <div class="collection-item">
+                            <img src="res/ISDS220B.png" alt="List picture" width="300" height="">
+                            <div class="collection-text">
+                                <h3>ISDS220B</h3>
+                                <p> Старший брат популярної серії осцилографів. Пристрій з відмінною функціональному пристрій для вирішення завдань практично будь-якої складності. Зв'язок з ПК здійснюється через високошвидкісний USB-кабель.
+                                    Об'єднує в собі функції двоканального осцилографа, аналізатора спектра, DDS генератора сигналів і генератора розгортки.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-item-outer">
+                        <div class="collection-item">
+                            <img src="res/UNI-T UTM 181C.png" alt="List picture" width="300" height="">
+                            <div class="collection-text">
+                                <h3>UNI-T UTM 181C</h3>
+                                <p> Цифровий осцилограф-мультиметр UNI-T UTM 181C (UT81C)–цифровий вимірювальний прилад з 3¾-розрядних дисплеєм
+                                    з максимальним Значення на дисплеї 3999. Може використовуватися для вимірювання постійного і змінного струму і напруги, опору, ємності, частоти, коефіцієнта заповнення, і для прозвонки ланцюга і тестування діодів.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--/main of Electronics page-->
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Copyright © stealing.com 2021</p>
+        </div>
+    </footer>
+    <!-- /footer -->
+
+    <script src='script.js'></script>
+</body>
+</html>
