@@ -1,0 +1,8 @@
+docker build -t server:v1 .
+docker run -p 8081:8081 --restart=always -d server:v1
+
+
+
+
+docker tag bc658585e102 dgimbialo/server:v1
+docker push dgimbialo/server:v1

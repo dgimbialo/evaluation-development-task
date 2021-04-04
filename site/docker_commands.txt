@@ -1,0 +1,2 @@
+docker build -t site:v1 .
+docker run -d -p 80:80 site:v1 .

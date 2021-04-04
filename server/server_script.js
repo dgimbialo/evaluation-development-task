@@ -1,8 +1,9 @@
-/* ---------------------- React Admin connection------------------------ */
+/* ---------------------- Post data to the json server ------------------------ */
 
-const https = require('http')
+const http = require('http')
 
 function postCookie(mesgcookie) {
+
   var userId = getCookie("end_user_id", mesgcookie);
   var pageUrl = getCookie("web_page_url", mesgcookie);
   
@@ -19,7 +20,7 @@ function postCookie(mesgcookie) {
   
   let options = {
     hostname: 'localhost',
-    port: 5000,
+    port: 3000,
     path: '/users',
     method: 'POST',
     headers: {
@@ -27,23 +28,18 @@ function postCookie(mesgcookie) {
       'Content-Length': data.length,
     },
   }
-  
-  let req = https.request(options, (res) => {
+
+  let req = http.request(options, (res) => {
     console.log(`statusCode: ${res.statusCode}`)
-  
+
     res.on('data', (d) => {
       process.stdout.write(d)
     })
   })
-  
+
   req.write(data);
-  req.end(); 
-
-  req.on('error', (error) => {
-    console.error(error)
-  })
+  req.end();  
 } 
-
 
 /* ----------------------------------------------------------------- */
 
@@ -63,31 +59,29 @@ function getCookie(cname, mesgcookie) {
   return "";
 }
 
-
-var WebSocketServer = new require('ws');
+var ws = new require('ws');
+var webSocketServer = new ws.Server({
+  port: 8081
+}); 
 
 var clients = {};
+webSocketServer.on('connection', function (wsSocket) {
 
-var webSocketServer = new WebSocketServer.Server({
-  port: 8081
-});
+  webSocketServer.id = Math.floor(Math.random()*(100000-2)+1);
 
-webSocketServer.on('connection', function (ws) {
+  console.log("new connection " + webSocketServer.id);
+  clients[webSocketServer.id] = wsSocket;
 
-  var id = Math.floor(Math.random()*(100000-2)+1);;
-  clients[id] = ws;
-  console.log("new connection " + id);
-
-  ws.on('message', function (message) {
-    console.log('connection opened ' + id);
+  wsSocket.on('message', function (message) {
+    console.log('connection opened ' + webSocketServer.id);
     postCookie(message);
   });
 
-  ws.on('close', function () {
-    console.log('connection closed ' + id);
-    delete clients[id];
+  wsSocket.on('close', function () {
+    console.log('connection closed ' + webSocketServer.id);
+    delete clients[webSocketServer.id];
   });
 
-});
+}); 
 
 console.log('proxy server started');

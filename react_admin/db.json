@@ -1,3 +1,100 @@
 {
-  "users": [ ]
+  "users": [
+    {
+      "userId": "888753",
+      "url": "http://localhost/##Laptops",
+      "at": "16/3/2021 21:50:12:651",
+      "id": 1
+    },
+    {
+      "userId": "9163564",
+      "url": "http://localhost/##Laptops",
+      "at": "16/3/2021 21:50:12:652",
+      "id": 2
+    },
+    {
+      "userId": "9163564",
+      "url": "http://localhost/#Laptops",
+      "at": "16/3/2021 21:50:16:121",
+      "id": 3
+    },
+    {
+      "userId": "9163564",
+      "url": "http://localhost/#Phones",
+      "at": "16/3/2021 21:50:16:775",
+      "id": 4
+    },
+    {
+      "userId": "6511581",
+      "url": "http://localhost/##Laptops",
+      "at": "16/3/2021 21:50:43:463",
+      "id": 5
+    },
+    {
+      "userId": "2069524",
+      "url": "http://localhost/##Laptops",
+      "at": "16/3/2021 21:50:43:464",
+      "id": 6
+    },
+    {
+      "userId": "7143105",
+      "url": "http://localhost/##Laptops",
+      "at": "16/3/2021 21:50:43:865",
+      "id": 7
+    },
+    {
+      "userId": "7160188",
+      "url": "http://localhost/##Laptops",
+      "at": "16/3/2021 21:50:43:866",
+      "id": 8
+    },
+    {
+      "userId": "7110262",
+      "url": "http://localhost/##Laptops",
+      "at": "16/3/2021 21:50:44:99",
+      "id": 9
+    },
+    {
+      "userId": "9387181",
+      "url": "http://localhost/##Laptops",
+      "at": "16/3/2021 21:50:44:100",
+      "id": 10
+    },
+    {
+      "userId": "1913899",
+      "url": "http://localhost/##Laptops",
+      "at": "16/3/2021 21:50:44:741",
+      "id": 11
+    },
+    {
+      "userId": "9354551",
+      "url": "http://localhost/##Laptops",
+      "at": "16/3/2021 21:50:44:742",
+      "id": 12
+    },
+    {
+      "userId": "9354551",
+      "url": "http://localhost/#Laptops",
+      "at": "16/3/2021 21:54:45:923",
+      "id": 13
+    },
+    {
+      "userId": "9354551",
+      "url": "http://localhost/#Phones",
+      "at": "16/3/2021 21:54:46:845",
+      "id": 14
+    },
+    {
+      "userId": "8986930",
+      "url": "http://localhost/#Phones",
+      "at": "3/4/2021 15:29:18:774",
+      "id": 15
+    },
+    {
+      "userId": "8986930",
+      "url": "http://localhost/#Electronics",
+      "at": "3/4/2021 15:29:20:86",
+      "id": 16
+    }
+  ]
 }

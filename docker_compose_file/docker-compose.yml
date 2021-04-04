@@ -3,7 +3,7 @@ services:
   website:
     image: dgimbialo/site:v1
     ports:
-      - "80:80"    
+      - "80:80"  
     links:
         - server
   server:
@@ -11,7 +11,6 @@ services:
     container_name: server
     ports:
       - "8081:8081"
-      - "5000:5000"
     restart: always
     links: 
       - react_admin   
@@ -20,4 +19,5 @@ services:
     container_name: reactAdmin
     ports:
     - "3000:3000"
+    - "5000:5000"
     restart: always  
