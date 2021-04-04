@@ -1,2 +1,9 @@
 docker build -t react-admin:v1 .
 docker run -p 3000:3000 -p 5000:5000 -d react-admin:v1
+
+
+
+
+
+docker tag 0ca9060c7732 dgimbialo/react-admin:v1
+docker push dgimbialo/react-admin:v1

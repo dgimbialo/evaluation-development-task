@@ -1,2 +1,6 @@
 docker build -t site:v1 .
 docker run -d -p 80:80 site:v1 .
+
+
+docker tag 8a71f6090464 dgimbialo/site:v1
+docker push dgimbialo/site:v1
